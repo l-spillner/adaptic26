@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizers - ADAPTIC Workshop</title>
+    <meta name="description" content="Organizers of the ADAPTIC Workshop at CUI26.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .organizer-profile {
+            width: 100%;
+            max-width: 250px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .organizer-row .column:first-child .organizer-profile {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .organizer-row .column:last-child .organizer-profile {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .organizer-row {
+            margin-bottom: 2rem;
+            align-items: center;
+            /* Vertical centering across the columns */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: 2rem;
+        }
+
+        .organizer-row:first-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            padding-top: 2rem;
+        }
+
+        .organizer-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .text-right-aligned .organizer-name,
+        .text-right-aligned .organizer-affiliation {
+            text-align: right;
+        }
+
+        .organizer-name {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .organizer-affiliation {
+            font-weight: 600;
+            color: var(--dark-main);
+            margin-bottom: 1.2rem;
+            display: block;
+        }
+
+        .organizer-bio {
+            text-align: justify;
+        }
+
+        /* Responsive image tweaks */
+        @media (max-width: 768px) {
+
+            /* Keep images small and centered on mobile */
+            .organizer-row .column:first-child .organizer-profile,
+            .organizer-row .column:last-child .organizer-profile {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            /* Ensure image always stacks on top of text */
+            .organizer-row .column.text-right-aligned {
+                order: 2;
+            }
+
+            /* Center alignment for names and affiliations on mobile */
+            .organizer-name,
+            .organizer-affiliation,
+            .text-right-aligned .organizer-name,
+            .text-right-aligned .organizer-affiliation {
+                text-align: center;
+            }
+
+            .organizer-row {
+                padding-bottom: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">ADAPTIC</a>
+            <button class="mobile-nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="cfp.html">Call for Participation</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="organizers.html" class="active">Organizers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Single section, white background -->
+        <section class="section-light">
+            <div class="container">
+                <h2 class="section-title">Our Organizers</h2>
+                <p style="margin-bottom: 3rem; opacity: 0.9;">The organizing committee comprises an interdisciplinary
+                    team of researchers bringing together expertise from diverse fields, all researching CUIs, CAs, or
+                    ComAI. Our backgrounds span Computer Science, HCI, Linguistics, Media and Communication Studies,
+                    Science and Technology Studies, Cultural Anthropology, and Educational Science. The idea for this
+                    workshop was developed in the DFG-funded research group <a href="https://comai.space/"
+                        style="text-decoration: underline; font-weight: 600;">ComAI</a>, which many of us are part of.
+                </p>
+
+                <div class="organizer-list">
+
+                    <!-- Organizer 1 -->
+                    <div class="two-columns organizer-row">
+                        <div class="column">
+                            <img src="assets/images/spillner.png" alt="Organizer 1" class="organizer-profile">
+                        </div>
+                        <div class="column">
+                            <h3 class="organizer-name">Laura Spillner</h3>
+                            <span class="organizer-affiliation">University of Bremen</span>
+                            <p class="organizer-bio">Laura is a PhD student at the Digital Media Lab at the University
+                                of Bremen. With a background in computer science, her research focuses on the
+                                development of explainable AI in the field of language understanding and the interaction
+                                between humans and AI in natural language.</p>
+                        </div>
+                    </div>
+
+                    <!-- Organizer 2 (Reverse: Bio left, Image right) -->
+                    <div class="two-columns organizer-row">
+                        <div class="column text-right-aligned">
+                            <h3 class="organizer-name">Johanna Rockstroh</h3>
+                            <span class="organizer-affiliation">University of Bremen</span>
+                            <p class="organizer-bio">Johanna is a PhD student at the Digital Media Lab at the University
+                                of Bremen. As a computational linguist, her research focuses on how LLMs process and
+                                produce figurative language, and on evaluating their ability to generate novel and
+                                creative linguistic output.</p>
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/rockstroh.jpg" alt="Organizer 2" class="organizer-profile">
+                        </div>
+                    </div>
+
+                    <!-- Organizer 3 -->
+                    <div class="two-columns organizer-row">
+                        <div class="column">
+                            <img src="assets/images/jensen.jpg" alt="Organizer 3" class="organizer-profile">
+                        </div>
+                        <div class="column">
+                            <h3 class="organizer-name">Jule Jensen</h3>
+                            <span class="organizer-affiliation">University of Bremen</span>
+                            <p class="organizer-bio">Jule is a PhD student at the University of Bremen and a former user
+                                experience designer. She researches how generative AI must be designed to cater to the
+                                needs of neurodivergent students in higher education.</p>
+                        </div>
+                    </div>
+
+                    <!-- Organizer 4 (Reverse) -->
+                    <div class="two-columns organizer-row">
+                        <div class="column text-right-aligned">
+                            <h3 class="organizer-name">Paula Goerke</h3>
+                            <span class="organizer-affiliation">Institut für Informationsmanagement Bremen</span>
+                            <p class="organizer-bio">Paula is a PhD student at the Institute for Information Management
+                                in Bremen. She is an educational scientist with a focus on education and media, and is
+                                now researching the relationship between AI and data in the context of higher education.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/goerke.jpg" alt="Organizer 4" class="organizer-profile">
+                        </div>
+                    </div>
+
+                    <!-- Organizer 5 -->
+                    <div class="two-columns organizer-row">
+                        <div class="column">
+                            <img src="assets/images/skardelly.jpg" alt="Organizer 5" class="organizer-profile">
+                        </div>
+                        <div class="column">
+                            <h3 class="organizer-name">Sara Skardelly</h3>
+                            <span class="organizer-affiliation">University of Graz</span>
+                            <p class="organizer-bio">Sara is a PhD student at the Center for Data Science in Business
+                                and Society at the University of Graz. She has a background in Computational Social
+                                Systems, and her research explores futures linked to AI in care and health.</p>
+                        </div>
+                    </div>
+
+                    <!-- Organizer 6 (Reverse) -->
+                    <div class="two-columns organizer-row">
+                        <div class="column text-right-aligned">
+                            <h3 class="organizer-name">Leonie Winterpacht</h3>
+                            <span class="organizer-affiliation">University of Graz</span>
+                            <p class="organizer-bio">Leonie is a PhD student at the Center for Data Science in Business
+                                and Society at the University of Graz. Her background is in Cultural Anthropology, and
+                                she is now located in Science and Technology Studies. She is researching the use and
+                                appropriation of ComAI by older adults, in terms of health and care.</p>
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/winterpacht.jpg" alt="Organizer 6" class="organizer-profile">
+                        </div>
+                    </div>
+
+                    <!-- Organizer 7 -->
+                    <div class="two-columns organizer-row">
+                        <div class="column">
+                            <img src="assets/images/wermter.jpg" alt="Organizer 7" class="organizer-profile">
+                        </div>
+                        <div class="column">
+                            <h3 class="organizer-name">Jonah Wermter</h3>
+                            <span class="organizer-affiliation">Leibniz-Institute for Media Research |
+                                Hans-Bredow-Institut</span>
+                            <p class="organizer-bio">Jonah is a PhD student at the Leibniz-Institute for Media Research
+                                | Hans-Bredow-Institut in Hamburg, and a trained journalist with a background in
+                                Statistics and Social Sciences. His research focuses on the impact of ComAI on
+                                journalistic autonomy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Organizer 8 (Reverse) -->
+                    <div class="two-columns organizer-row">
+                        <div class="column text-right-aligned">
+                            <h3 class="organizer-name">Nima Zargham</h3>
+                            <span class="organizer-affiliation">University of Bremen</span>
+                            <p class="organizer-bio">Nima is a postdoctoral researcher at the Faculty of Information at
+                                the University of Toronto. His research focuses on human-AI communication and
+                                collaboration. He has organized workshops at notable HCI conferences (e.g., CHI, CUI,
+                                HRI, IUI, and IVA) and serves on the steering committee of the ACM CUI conference
+                                series.</p>
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/Nima.jpg" alt="Organizer 8" class="organizer-profile">
+                        </div>
+                    </div>
+
+                    <!-- Organizer 9 -->
+                    <div class="two-columns organizer-row">
+                        <div class="column">
+                            <img src="assets/images/malaka.jpg" alt="Organizer 9" class="organizer-profile">
+                        </div>
+                        <div class="column">
+                            <h3 class="organizer-name">Rainer Malaka</h3>
+                            <span class="organizer-affiliation">University of Bremen</span>
+                            <p class="organizer-bio">Rainer is Professor for Digital Media at the University of Bremen
+                                and
+                                the Dean of the Faculty of Mathematics and Computer Science. Within the Center for
+                                Computing Technologies he manages the research topic Empowering Digital Media. In
+                                addition, he is director of the PhD program Empowering Digital Media, funded by the
+                                Klaus Tschira Foundation. His research focus is on multi-modal interaction, language
+                                understanding, entertainment computing, and artificial intelligence.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bar">
+        <div class="footer-content">
+            <span><strong>ADAPTIC</strong> • CUI26 Workshop • Bremen • July 21, 2026</span>
+            <a href="mailto:adaptic@uni-bremen.de" class="footer-link">Contact Organizers</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

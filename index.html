@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAPTIC Workshop - CUI26</title>
+    <meta name="description"
+        content="Adapting Dialog and Pragmatic Traits in Context (ADAPTIC) - Workshop at CUI26, Bremen, 21st of July 2026.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            flex-shrink: 0;
+            margin-top: 0 !important;
+            /* Force override of any cached negative margin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            background-image: linear-gradient(rgba(20, 17, 36, 0.85), rgba(20, 17, 36, 0.85)), url('assets/images/hero-bg.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            color: var(--white);
+        }
+
+        .hero h1 .highlight-text {
+            color: var(--accent);
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 3.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero h1 .highlight-text {
+                font-size: 2.8rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">ADAPTIC</a>
+            <button class="mobile-nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="cfp.html">Call for Participation</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="organizers.html">Organizers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Adapting Dialog and Pragmatic Traits in Context <span class="highlight-text">ADAPTIC</span></h1>
+            <p>CUI26, Bremen, 21st of July 2026</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 2: Description (White) -->
+        <section class="section-light">
+            <div class="container">
+                <h2 class="section-title">About the Workshop</h2>
+                <p style="margin-bottom: 1.5rem; text-align: left; max-width: 900px;">
+                    With the development of LLMs, the possibilities in designing human-like CUIs has been greatly
+                    improved. Consequently, CUIs are increasingly adopting human-like pragmatic cues — such as tone of
+                    voice, backchanneling, social or emotional expressions, and conversational repair. However, these
+                    cues are often blindly mimicked by LLMs, rather than being strategically designed to serve a true
+                    communicative function. As LLMs are increasingly being utilized in CUIs across domains requiring
+                    divergent user expectations, visual and linguistic interface features provide an opportunity to
+                    strategically adapt the interaction for domain specific needs.
+                    How can we move beyond the mere illusion of human-like pragmatic cues, and embed these as interface
+                    features to design CUIs that actively support mutual understanding and serve user needs in their
+                    specific domain context?
+                </p>
+                <p style="margin-bottom: 1.5rem; text-align: left; max-width: 900px;">
+                    This half-day, in-person workshop will kick off this interdisciplinary discourse by inviting
+                    researchers, designers, and practitioners to rethink pragmatic cues in CUI design across domains. We
+                    aim to bridge the gap between HCI, psycholinguistics, and the social sciences to explore how users
+                    appropriate conversational AI across various contexts, transitioning from open-domain models to
+                    specialized, domain-specific implementations.
+                </p>
+                <p style="text-align: left; max-width: 900px;">
+                    To learn more about participation in the workshop, please refer to the
+                    <a href="cfp.html" style="text-decoration: underline; font-weight: 600;">Call for Participation</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Topics & Dates (Muted) -->
+        <section class="section-muted">
+            <div class="container two-columns">
+                <div class="column">
+                    <h3 style="color: var(--dark-main); margin-bottom: 1.2rem; font-size: 1.3rem;">Key Topics</h3>
+                    <ul class="styled-list">
+                        <li>Strategic use of linguistic or paralinguistic cues in CUIs</li>
+                        <li>Visual user interface design for domain-specific chatbots</li>
+                        <li>Mutual understanding and cognitive load in human-machine dialog</li>
+                        <li>Case studies of interaction and appropriation in specialized domains (e.g., health,
+                            education, journalism)</li>
+                        <li>Moving from open-domain LLMs to domain- or context-aware CAs</li>
+                        <li>Ethical implications and trust calibration in domain-specific CAs</li>
+                        <li>Interdisciplinary frameworks for CUI design</li>
+                        <li>CUI design for neurodivergent users, older users, or users with impairments</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h3 style="color: var(--dark-main); margin-bottom: 1.2rem; font-size: 1.3rem;">Important Dates</h3>
+                    <ul class="date-list">
+                        <li><span>Submission deadline:</span> <strong>4th of June, 23:59 AoE</strong></li>
+                        <li><span>Acceptance Notification:</span> <strong>19th of June</strong></li>
+                        <li><span>Workshop Date</span> <strong>July 21st, 9:00am to 12:45pm</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bar">
+        <div class="footer-content">
+            <span><strong>ADAPTIC</strong> • CUI26 Workshop • Bremen • July 21, 2026</span>
+            <a href="mailto:adaptic@uni-bremen.de" class="footer-link">Contact Organizers</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
