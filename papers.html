@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Papers - ADAPTIC Workshop</title>
+    <meta name="description" content="Position papers submitted to the ADAPTIC Workshop at CUI26.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .papers-list {
+            margin-top: 2rem;
+        }
+
+        .paper-item {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .paper-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .paper-title {
+            font-size: 1.2rem;
+            color: var(--dark-main);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .paper-authors {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .paper-link-container {
+            margin-top: 1.2rem;
+        }
+
+        /* Subtle button tweak to align with the design theme */
+        .btn-paper {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-dark);
+            padding: 8px 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            text-align: center;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-paper:hover {
+            background-color: #ffd659;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">ADAPTIC</a>
+            <button class="mobile-nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="cfp.html">Call for Participation</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="papers.html" class="active">Position Papers</a></li>
+                <li><a href="organizers.html">Organizers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-light">
+            <div class="container">
+                <h2 class="section-title">Position Papers</h2>
+
+                <div class="papers-list">
+                    <!-- Paper 1 -->
+                    <div class="paper-item">
+                        <h3 class="paper-title">Did I Stutter? Why Perfect Voice Technology Discriminates Against Speech-Impaired Users</h3>
+                        <p class="paper-authors">Androniki Mertsiotaki & Sven Winkelmann (Technische Hochschule Georg Simon Ohm, Nürnberg, Germany)</p>
+                        <p style="text-align: justify; max-width: 900px; opacity: 0.85;">
+                            Voice assistants are great tools for offering support to vulnerable user groups. However, their systems carry inherent biases and barriers that obstruct the inclusion of diverse speech varieties, such as those of individuals with neurodegenerative language disorders. We pose that commercial voice technology is built around a narrow, idealized speaker norm that marginalizes atypical speech across the entire pipeline. Focusing on two neurological conditions, Parkinson's and Alzheimer's disease, we illustrate how speech impairments give rise to conversational barriers. Lastly, we examine how the burden of adaptation is inequitably placed on users and suggest that conversational user interfaces need to be designed for imperfect personas instead of an idealized speaker norm.
+                        </p>
+                        <div class="paper-link-container">
+                            <a href="https://drive.google.com/file/d/14n_MHBleK3eE7ZQ32Qw355WbiAYpwCDN/view?usp=share_link" class="btn-paper" target="_blank" rel="noopener noreferrer">Paper</a>
+                        </div>
+                    </div>
+
+                    <!-- Paper 2 -->
+                    <div class="paper-item">
+                        <h3 class="paper-title">Learning from Traditional Chatbots: Adapting LLM Chatbot Interfaces to User Context</h3>
+                        <p class="paper-authors">Verena Traubinger & Martin Gaedke (Chemnitz University of Technology, Germany)</p>
+                        <p style="text-align: justify; max-width: 900px; opacity: 0.85;">
+                            LLM chatbots combine conversational and graphical elements in increasingly complex interfaces, but often do not adapt them to the user's context. We argue that lessons from traditional chatbots can improve the graphical interface of LLM chatbots. Quick replies and cards can support users with quicker interactions, better overviews, and conversational repair. While free-text provides more human-like interaction, users might benefit in more personal tasks to be reminded of the chatbot as a machine. We therefore propose that LLM chatbot interfaces should be adaptable and select graphical elements based on the context.
+                        </p>
+                        <div class="paper-link-container">
+                            <a href="https://drive.google.com/file/d/1itKXA7oWzZ8MmiR_-rjPomm-iGEcNLXM/view?usp=share_link" class="btn-paper" target="_blank" rel="noopener noreferrer">Paper</a>
+                        </div>
+                    </div>
+
+                    <!-- Paper 3 -->
+                    <div class="paper-item">
+                        <h3 class="paper-title">Productive Friction as a Design Principle for Negotiating Creativity in Agentic CUI Systems. A proposal for CUI workshop: Adapting Dialog and Pragmatic Traits in Context</h3>
+                        <p class="paper-authors">Nadav Viduchinsky & Noa Morag (Media Innovation Lab (milab), School of Communications, Reichman University)</p>
+                        <div class="paper-link-container">
+                            <a href="https://drive.google.com/file/d/1HAE2oij5Kz7mfPm-2XWwVVj9lvxR9NTW/view?usp=share_link" class="btn-paper" target="_blank" rel="noopener noreferrer">Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bar">
+        <div class="footer-content">
+            <span><strong>ADAPTIC</strong> • CUI26 Workshop • Bremen • July 21, 2026</span>
+            <a href="mailto:adaptic@uni-bremen.de" class="footer-link">Contact Organizers</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
